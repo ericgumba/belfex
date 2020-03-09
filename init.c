@@ -92,6 +92,107 @@ vuser_init()
 		"RequestUrl=*/Login.aspx*",
 		LAST);
 
+/*Correlation comment: Automatic rules - Do not change!  
+Original value='/wEPDwUKMTYzMDU1NjE3NRAWAh4TVmFsaWRhdGVSZXF1ZXN0TW9kZQIBZBYCZg9kFgRmD2QWAgIBDxUEOi9NVkMvQ29udGVudC9qcy9FeHRlcm5hbC9LZW5kby9zdHlsZXMva2VuZG8uY29tbW9uLm1pbi5jc3M7L01WQy9Db250ZW50L2pzL0V4dGVybmFsL0tlbmRvL3N0eWxlcy9rZW5kby51bmlmb3JtLm1pbi5jc3MoL01WQy9Db250ZW50L2Nzcy9MaWJyYXJ5L2xpYnJhcnkubWluLmNzcx0vTVZDL0NvbnRlbnQvY3NzL2VyZWNydWl0LmNzc2QCBw9kFgQCBQ9kFgJmDxUBLkFwcF9UaGVtZXMvRGVmYXVsdC9qYXZhc2NyaXB0L3RlbGVyaWstaGFja3MuanNkAgsPZBYEAgUPZBYCZg9kFgRmD2QWBAIBDw8WAh4EVGV4dAUUV2VsY29tZSB0byBlcmVjcnVpdC5kZAIFD2QWAmYPZBYCAgEPZBYEAgMPD2QWAh4MYXV0b2NvbXBsZXRlBQJvbmQCBw8PZBYCHwIFA29mZmQCAQ9kFgYCBQ8PFgIeB1Zpc2libGVoZGQCCw8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYCZg8VASdQYXNzd29yZCBtdXN0IGJlIGF0IGxlYXN0IDggY2hhcmFjdGVycy5kAg0PZBYCZg9kFgICAQ88KwAEAGQCBw9kFgICAQ8PFgIfAQUNVXBsb2FkIFJlc3VtZWRkGAIFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYBBRRjdGwwMCR0aXBQaG9uZU51bWJlcgUXY3RsMDAkY3BoTWFpbiRtdWx0aVZpZXcPD2RmZMri2VLD5z9cOEVhzzjl5nB9UcDV' 
+Name ='AspNet_ViewState_1' 
+Type ='Rule' 
+AppName ='ASPNET' 
+RuleName ='__VIEWSTATE'*/
+	web_reg_save_param_ex(
+		"ParamName=AspNet_ViewState_1",
+		"LB/IC=__VIEWSTATE\" value=\"",
+		"RB/IC=\"",
+		SEARCH_FILTERS,
+		"Scope=Body",
+		"RequestUrl=*/Login.aspx*",
+		LAST);
+
+/*Correlation comment: Automatic rules - Do not change!  
+Original value='m3cmci195IuJDEJw8Ad9w37t-ar6S_p30DNET5tULqLw7XFJh2YiN6Ss8jqHn9dSsoMnt6V8ZKqZirvlHa70GP0TrFw1&amp;t=637100682046795651' 
+Name ='AspNet_WebResource_2' 
+Type ='Rule' 
+AppName ='ASPNET' 
+RuleName ='WebResource.axd'*/
+	web_reg_save_param_ex(
+		"ParamName=AspNet_WebResource_2",
+		"LB/IC=WebResource.axd?d=",
+		"RB/IC=\"",
+		SEARCH_FILTERS,
+		"Scope=Body",
+		"RequestUrl=*/Login.aspx*",
+		LAST);
+
+/*Correlation comment: Automatic rules - Do not change!  
+Original value='9x5OvJaQVu0vj9j4xaQBlKKOEaHrkzcdmYjM4RFhcq_Djt9kUkyhoYU-zBekcY7ErwHvsRc6Fag_rhwv4YrfJqE6BjlCkvm8UNUUm_-qZjnXRoo20cEn-b5wePLrceOAAkBxDE5DWZN0-d_FIEREFdILw641&amp;t=ffffffff93f2983c' 
+Name ='AspNet_ScriptResource_8' 
+Type ='Rule' 
+AppName ='ASPNET' 
+RuleName ='ScriptResource.axd'*/
+	web_reg_save_param_ex(
+		"ParamName=AspNet_ScriptResource_8",
+		"LB/IC=ScriptResource.axd?d=",
+		"RB/IC=\"",
+		SEARCH_FILTERS,
+		"Scope=Body",
+		"RequestUrl=*/Login.aspx*",
+		LAST);
+
+/*Correlation comment: Automatic rules - Do not change!  
+Original value='ppYwzJsRb6AhcOLm41MnVR6O_dxAYwx8kQEpShx-opg0jHDm6nly6o_cE0sit9ie8fEwOeM0k4Lm4iI1v9oFaDaP91E1&amp;t=637100682046795651' 
+Name ='AspNet_WebResource_3' 
+Type ='Rule' 
+AppName ='ASPNET' 
+RuleName ='WebResource.axd'*/
+	web_reg_save_param_ex(
+		"ParamName=AspNet_WebResource_3",
+		"LB/IC=WebResource.axd?d=",
+		"RB/IC=\"",
+		"Ordinal=2",
+		SEARCH_FILTERS,
+		"Scope=Body",
+		"RequestUrl=*/Login.aspx*",
+		LAST);
+
+/*Correlation comment - Do not change!  Original value=';Telerik.Web.UI, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4:en-US:d8ebf3de-0179-4fa4-89e6-a030e0cf94a1:53e1db5a:d126a8ef' Name ='ctl00_radStylesheetManager_TSSM_1' Type ='ResponseBased'*/
+	web_reg_save_param_regexp(
+		"ParamName=ctl00_radStylesheetManager_TSSM_1",
+		"RegExp==\\ '(.*?)';\\\r\\\n\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ Sys\\.Application\\.remove_load\\(loadHandler\\)",
+		SEARCH_FILTERS,
+		"Scope=Body",
+		"IgnoreRedirections=No",
+		"RequestUrl=*/Login.aspx*",
+		LAST);
+
+/*Correlation comment - Do not change!  Original value='635004147360000000' Name ='t_1' Type ='ResponseBased'*/
+	web_reg_save_param_regexp(
+		"ParamName=t_1",
+		"RegExp=r532rj6peQhOU9Jbs60awRF9cVkMG6_f_gKnSGE-TbyWHumQoRS4KEP5BSetjKUf5oEvASreCkcRaiN8wcDAhb-bSsvTJOcrlLIt9O6cnfMGr-Wi81LfhnL7n7k1&t=(.*?)'\\)\\ no-repeat\\ center}\\.RadToolTip_Default\\ \\.rtWrapper\\ \\.rtWrapperTopLeft,\\.RadToolTip_Default\\ \\.rtWrapper\\ \\.rtWrapperTopRight,\\.RadToolT",
+		SEARCH_FILTERS,
+		"Scope=Body",
+		"IgnoreRedirections=No",
+		"RequestUrl=*/Telerik.Web.UI.WebResource.axd*",
+		LAST);
+
+/*Correlation comment - Do not change!  Original value='C2EE9ABB' Name ='__VIEWSTATEGENERATOR_1' Type ='ResponseBased'*/
+	web_reg_save_param_regexp(
+		"ParamName=__VIEWSTATEGENERATOR_1",
+		"RegExp=id=\"__VIEWSTATEGENERATOR\"\\ value=\"(.*?)\"\\ ",
+		SEARCH_FILTERS,
+		"Scope=Body",
+		"IgnoreRedirections=No",
+		"RequestUrl=*/Login.aspx*",
+		LAST);
+
+/*Correlation comment - Do not change!  Original value='00000000-0000-0000-0000-000000000e01' Name ='entityIDs' Type ='ResponseBased'*/
+	web_reg_save_param_regexp(
+		"ParamName=entityIDs",
+		"RegExp=erecruitActiveEntity=(.*?);",
+		SEARCH_FILTERS,
+		"Scope=Cookies",
+		"IgnoreRedirections=No",
+		"RequestUrl=*/Login.aspx*",
+		LAST);
+
 	web_url("Login.aspx", 
 		"URL=https://staff.belflex.com/Login.aspx?ReturnUrl=%2f", 
 		"TargetFrame=", 
@@ -154,6 +255,30 @@ vuser_init()
 		"Url=/MVC/Content/images/bits/ddl.png", "Referer=https://staff.belflex.com/MVC/Content/css/erecruit.css", ENDITEM, 
 		"Url=/MVC/Content/js/External/Kendo/styles/Uniform/loading-image.gif", "Referer=https://staff.belflex.com/MVC/Content/js/External/Kendo/styles/kendo.uniform.min.css", ENDITEM, 
 		"Url=/MVC/Content/js/External/Kendo/styles/Uniform/sprite.png", "Referer=https://staff.belflex.com/MVC/Content/js/External/Kendo/styles/kendo.uniform.min.css", ENDITEM, 
+		LAST);
+
+	web_convert_param("ctl00_radStylesheetManager_TSSM_1_URL1",
+		"SourceString=ctl00_radStylesheetManager_TSSM_1",
+		"SourceEncoding=HTML",
+		"TargetEncoding=URL",
+		LAST);
+
+	web_convert_param("AspNet_WebResource_3_PLAIN",
+		"SourceString=AspNet_WebResource_3",
+		"SourceEncoding=HTML",
+		"TargetEncoding=PLAIN",
+		LAST);
+
+	web_convert_param("AspNet_ScriptResource_8_PLAIN",
+		"SourceString=AspNet_ScriptResource_8",
+		"SourceEncoding=HTML",
+		"TargetEncoding=PLAIN",
+		LAST);
+
+	web_convert_param("AspNet_WebResource_2_PLAIN",
+		"SourceString=AspNet_WebResource_2",
+		"SourceEncoding=HTML",
+		"TargetEncoding=PLAIN",
 		LAST);
 
 	web_convert_param("AspNet_WebResource_1_PLAIN",
